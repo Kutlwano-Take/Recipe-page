@@ -1,0 +1,153 @@
+ body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            background-color: hsl(30, 54%, 90%)
+        }
+        
+        .recipe-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #222;
+            font-size: clamp(24px, 5vw, 28px);
+            margin-bottom: 15px;
+        }
+        
+        .description {
+            margin-bottom: 25px;
+            color: #555;
+            font-size: clamp(14px, 3vw, 16px);
+        }
+        
+        .prep-time {
+            background-color: #fff5fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .prep-time h3 {
+            color: #7b284f;
+            margin-top: 0;
+            font-size: clamp(16px, 4vw, 18px);
+        }
+        
+        .prep-time ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+        
+        .prep-time li {
+            margin-bottom: 5px;
+            font-size: clamp(14px, 3vw, 16px);
+        }
+        
+        .prep-time li:last-child {
+            margin-bottom: 0;
+        }
+        
+        h2 {
+            color: #854632;
+            font-size: clamp(20px, 4.5vw, 22px);
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            padding-left: 15px;
+            font-size: clamp(14px, 3vw, 16px);
+        }
+        
+        .ingredients li::marker {
+            color: #854632;
+        }
+        
+        .instructions li::marker {
+            color: #854632;
+            font-weight: bold;
+        }
+        
+        .nutrition p {
+            margin-bottom: 15px;
+            font-size: clamp(14px, 3vw, 16px);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: clamp(14px, 3vw, 16px);
+        }
+        
+        tr {
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:last-child {
+            border-bottom: none;
+        }
+        
+        td {
+            padding: 10px 0;
+        }
+        
+        td:last-child {
+            color: #854632;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .recipe-card {
+                padding: 20px;
+                border-radius: 10px;
+            }
+            
+            .prep-time {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            li {
+                margin-bottom: 8px;
+            }
+        }
+
+        /* Desktop-specific adjustments */
+        @media (min-width: 601px) {
+            body {
+                padding: 40px 20px;
+            }
+        }
+
+img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
